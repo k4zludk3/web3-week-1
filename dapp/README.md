@@ -1,14 +1,66 @@
-# dapp
+## Foundry
 
-Our Donate Crypto web3 frontend. Project from Web3 Week: https://www.luiztools.com.br/w3w
+**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
 
-## How to Run
+Foundry consists of:
 
-1. git clone dapp
-2. npm install
-3. If you have your contract deployed, change his address at services/Web3Service.js and your ABI.json
-4. npm run dev
+-   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
+-   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
+-   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
+-   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
 
-Follow me on social networks for more: https://about.me/luiztools
+## Documentation
 
-Receive my news on Telegram: https://t.me/luiznews
+https://book.getfoundry.sh/
+
+## Usage
+
+### Build
+
+```shell
+$ forge build
+```
+
+### Test
+
+```shell
+$ forge test
+```
+
+### Format
+
+```shell
+$ forge fmt
+```
+
+### Gas Snapshots
+
+```shell
+$ forge snapshot
+```
+
+### Anvil
+
+```shell
+$ anvil
+```
+
+### Deploy
+
+```shell
+$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
+```
+
+### Cast
+
+```shell
+$ cast <subcommand>
+```
+
+### Help
+
+```shell
+$ forge --help
+$ anvil --help
+$ cast --help
+```
