@@ -9,6 +9,7 @@ struct Campaign {
     string  title;
     string  description;
     string  cnpj;
+    string  remoteVar;
     string  videoUrl;
     string  imageUrl;
 }       
