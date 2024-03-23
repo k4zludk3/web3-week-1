@@ -3,8 +3,8 @@
 pragma solidity ^0.8.17;
 
 struct Campaign {
-    uint256 balance;
     bool    active;
+    uint256 balance;
     address author;
     string  title;
     string  description;
